@@ -2,6 +2,7 @@ package backend.academy.maze.renderer;
 
 import backend.academy.maze.model.Cell;
 import backend.academy.maze.model.Maze;
+import backend.academy.maze.solver.PathStatistic;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -33,6 +34,19 @@ public class SymbolicRendererTest {
         assertThat(count(representation, '♫')).isEqualTo(3);
         assertThat(count(representation, 'I')).isEqualTo(2);
         assertThat(count(representation, 'O')).isEqualTo(2);
+    }
+
+    @Test
+    public void statisticResultRender() {
+        Renderer renderer = new SymbolicRenderer();
+        PathStatistic statistic = new PathStatistic(15, 13, 17, 121);
+
+        String representation = renderer.render(statistic);
+
+        assertThat(representation).contains("15");
+        assertThat(representation).contains("13");
+        assertThat(representation).contains("17");
+        assertThat(representation).contains("121");
     }
 
     private static int count(String s, char c) {
