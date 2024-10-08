@@ -190,6 +190,13 @@
             <artifactId>jmh-generator-annprocess</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.diogonunes/JColor -->
+        <dependency>
+            <groupId>com.diogonunes</groupId>
+            <artifactId>JColor</artifactId>
+            <version>5.5.1</version>
+        </dependency>
+
         <!-- Tests -->
         <dependency>
             <groupId>org.assertj</groupId>
