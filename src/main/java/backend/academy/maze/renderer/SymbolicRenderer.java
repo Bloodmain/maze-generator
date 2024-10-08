@@ -53,8 +53,8 @@ public class SymbolicRenderer implements Renderer {
             sb.append(System.lineSeparator());
         }
         sb.append(
-            ("\"%s\" stands for the wasp surface, \"%s\" - for the music surface, " +
-                "\"%s\" - for the entrance, \"%s\" - for the exit.")
+            ("\"%s\" stands for the wasp surface, \"%s\" - for the music surface, "
+                + "\"%s\" - for the entrance, \"%s\" - for the exit.")
                 .formatted(CELL_SYMBOL.get(Cell.Type.WASP), CELL_SYMBOL.get(Cell.Type.MUSIC),
                     CELL_SYMBOL.get(Cell.Type.ENTRANCE), CELL_SYMBOL.get(Cell.Type.EXIT))
         );
