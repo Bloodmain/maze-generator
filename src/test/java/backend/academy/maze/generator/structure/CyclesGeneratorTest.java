@@ -4,7 +4,7 @@ import backend.academy.maze.generator.GeneratorSettings;
 import backend.academy.maze.model.Coordinate;
 import backend.academy.maze.utility.CellOperations;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class CyclesGeneratorTest {
     @Test

@@ -7,7 +7,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SolverTest {
     private static Stream<Solver> solvers() {
@@ -48,7 +48,7 @@ public class SolverTest {
 
         List<Coordinate> path = solver.solve(maze, settings);
 
-        assertThat(path.size()).isEqualTo(0);
+        assertThat(path).hasSize(0);
     }
 
     @ParameterizedTest
@@ -64,7 +64,7 @@ public class SolverTest {
 
         List<Coordinate> path = solver.solve(maze, settings);
 
-        assertThat(path.size()).isEqualTo(0);
+        assertThat(path).hasSize(0);
     }
 
     @ParameterizedTest
@@ -80,7 +80,7 @@ public class SolverTest {
 
         List<Coordinate> path = solver.solve(maze, settings, new Coordinate(2, 3), new Coordinate(1, 2));
 
-        assertThat(path.size()).isEqualTo(7);
+        assertThat(path).hasSize(7);
         assertThat(path).isEqualTo(List.of(
             new Coordinate(2, 3),
             new Coordinate(3, 3),
@@ -105,7 +105,7 @@ public class SolverTest {
 
         List<Coordinate> path = solver.solve(maze, settings);
 
-        assertThat(path.size()).isEqualTo(4);
+        assertThat(path).hasSize(4);
         assertThat(path).isEqualTo(List.of(
             new Coordinate(0, 2),
             new Coordinate(1, 2),
@@ -128,7 +128,7 @@ public class SolverTest {
 
         List<Coordinate> path = solver.solve(maze, settings);
 
-        assertThat(path.size()).isEqualTo(9);
+        assertThat(path).hasSize(9);
         assertThat(path).isEqualTo(List.of(
             new Coordinate(0, 2),
             new Coordinate(1, 2),

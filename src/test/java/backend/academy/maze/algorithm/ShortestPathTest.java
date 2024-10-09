@@ -5,7 +5,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ShortestPathTest {
     private static Stream<ShortestPathAlgorithm> shortestPathAlgorithms() {

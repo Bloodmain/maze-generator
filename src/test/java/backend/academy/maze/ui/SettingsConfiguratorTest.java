@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 public class SettingsConfiguratorTest {

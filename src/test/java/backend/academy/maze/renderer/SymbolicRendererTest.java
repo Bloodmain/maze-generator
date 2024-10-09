@@ -4,7 +4,7 @@ import backend.academy.maze.model.Cell;
 import backend.academy.maze.model.Maze;
 import backend.academy.maze.solver.PathStatistic;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SymbolicRendererTest {
     @Test
