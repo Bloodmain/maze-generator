@@ -25,7 +25,7 @@ public class ShortestPathTest {
             i -> 1
         );
 
-        assertThat(path.size()).isEqualTo(0);
+        assertThat(path).hasSize(0);
     }
 
     @ParameterizedTest
